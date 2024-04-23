@@ -2,8 +2,7 @@ body{
     height: 100vh;
     display: grid; 
     grid-template-rows: 100px 40px 1fr 150px; 
-    grid-template-columns:
-        repeat(1fr, 4);
+    grid-template-columns:repeat(1fr, 4);
     margin: 100px;
     font-size: large;
     row-gap: 0px;
@@ -28,13 +27,12 @@ body{
     grid-row: 2/3;
     grid-column: 1/5;
     background: rgb(19, 18, 18);
-    
 }
 
-    a{
-     color: white;
-     text-decoration: none;  
-    }
+a{
+  color: white;
+  text-decoration: none;  
+}
 
 .main{
     grid-row: 3/4;
