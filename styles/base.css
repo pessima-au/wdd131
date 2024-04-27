@@ -5,9 +5,13 @@ body{
     height:100vh;
 }
 
+main{
+    max-width: fit-content;
+}
+
 .flex-container{
     display: grid;
-    grid-template: 2 / auto;
+    grid-template: 2 / 1;
 }
 
 .heading{
@@ -78,7 +82,7 @@ nav a{
 }
 
 #card2{
-    grid: column 3px / 4px;
+    grid: column 3 / 4;
     grid-row: 1/2;
     border: solid lightblue thin;
     padding: 10px;
@@ -121,7 +125,7 @@ nav a{
 
 hr{
     width: 80%;
-    size: thin;
+    size: 1pc;
     margin-top: -15px;
 }
 
