@@ -24,15 +24,7 @@ main{
     align-items: center;
     font-size: 1.5rem;
     font-weight: bolder;
-}
-
-.white-text{
     color: white;
-    margin-right: 5px;
-}
-
-.yellow-text{
-    color: rgb(212, 212, 155);
 }
 
 .menu{
@@ -125,7 +117,6 @@ nav a{
 
 hr{
     width: 80%;
-    resize: 1pc;
     margin-top: -15px;
 }
 
