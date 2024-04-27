@@ -1,9 +1,10 @@
-const today = new Date().getFullYear();
-const currentyear = document.getElementById("#currentyear")
-currentyear.textContent = currentyear;
+const  currentyear = document.querySelector("#currentyear");
 
-const lastModified = document.lastModifiedDate;
+const lastModified = document.querySelector("#lastModified");
 
-const lastModified = document.getElementById("#lastModifiedDatd")
+const today = new Date();
 
-lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
+currentyear.innerHTML = `<span>${today.getFullYear()}</span>`;
+
+lastModified.innerHTML = `Last Modified: <span>${new Intl.DateTimeFormat("en-US",
+{dateStyle: "full"}).format(today)}</span>`;
