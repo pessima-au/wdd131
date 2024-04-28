@@ -20,11 +20,13 @@ main{
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bolder;
     color: white;
+    text-align: center;
 }
 
 .menu{
@@ -79,6 +81,7 @@ nav a{
     border: solid lightblue thin;
     padding: 10px;
     border-radius: 15px;
+    text-align: center;
 }
 
 .links{
