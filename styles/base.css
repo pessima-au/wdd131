@@ -2,7 +2,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style:normal;
-    height:100vh;
+    height: auto;
 }
 
 main{
@@ -62,7 +62,7 @@ nav a{
     display: grid;
     grid-template: 1fr / repeat(3, 1fr);
     margin: 30px;
-    height: 700px;
+    height: auto;
 }
 
 #card1{
@@ -114,7 +114,7 @@ nav a{
 }
 
 .freetown{
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -126,10 +126,10 @@ hr{
 
 .flag{
     float: left;
-    width: 240px;
-    height: 150px;
-    clear: right;
-    margin: 20px;
+    width: 190px;
+    height: 140px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
 .grid-container p{
@@ -138,14 +138,16 @@ hr{
 }
 
 section p{
-    margin: 20px;
+    margin: 25px;
 }
 
 
 footer{
     background: #336699;
     height: 100px;
-    display: block
+    position: relative;
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -161,3 +163,4 @@ footer{
     text-align: center;
     padding-top: 30px;
 }
+
