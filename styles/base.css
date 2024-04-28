@@ -129,9 +129,7 @@ hr{
     width: 240px;
     height: 150px;
     clear: right;
-    margin: 10px;
-    display: grid;
-    place-items: center;
+    margin: 20px;
 }
 
 .grid-container p{
@@ -140,7 +138,7 @@ hr{
 }
 
 section p{
-    margin: 15px;
+    margin: 20px;
 }
 
 
