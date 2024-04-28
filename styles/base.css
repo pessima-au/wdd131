@@ -81,7 +81,6 @@ nav a{
     border: solid lightblue thin;
     padding: 10px;
     border-radius: 15px;
-    text-align: center;
 }
 
 .links{
@@ -102,6 +101,7 @@ nav a{
     color: white;
     font-size: 1.2rem;
     flex-flow: row;
+    text-align: center;
 }
 
 
