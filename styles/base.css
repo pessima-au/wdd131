@@ -152,14 +152,14 @@ hr {
 }
 
 .image1 {
-    width: 100;
-    height: 100;
+    width: 100px;
+    height: 100px;
     aspect-ratio: 1/1;
 }
 
 .image2 {
-    width: 130;
-    height: 100;
+    width: 130px;
+    height: 100px;
     aspect-ratio: 6/9;
 }
 
