@@ -163,3 +163,7 @@ hr {
     aspect-ratio: 6/9;
 }
 
+#lastModified {
+    color: rgb(187, 197, 8);
+    font-family: "Sanchez";
+}
