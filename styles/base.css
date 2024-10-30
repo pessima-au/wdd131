@@ -47,6 +47,7 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: 70% 30%;
+    max-width: fit-content;
 }
 
 .card1 {
@@ -149,3 +150,16 @@ hr {
     width: 80%;
     margin-top: -15px;
 }
+
+.image1 {
+    width: 100;
+    height: 100;
+    aspect-ratio: 1/1;
+}
+
+.image2 {
+    width: 130;
+    height: 100;
+    aspect-ratio: 6/9;
+}
+
