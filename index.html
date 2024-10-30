@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" description="WDD 131 - Dynamic Web Fundamentals, Albert Pessima, a web page as part of week one assignments" author="albert pessima">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Albert Pessima, a web page as part of week one assignments">
+    <meta name="author" content="Albert Pessima"> 
+
     <title>WDD 131: Dynamic Web Fundamentals - Albert Pessima</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Sanchez&display=swap" rel="stylesheet">
+    <script src="./scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - Albert Pessima</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="name">Albert Pessima</span></h1>
         <nav>
             <a href="https://www.linkedin.com/in/albert-pessima/">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
@@ -21,30 +24,37 @@
         </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p></p>
-            <img src="images/albertpessima.jpg" alt="albert-pessima">
+        <section class="card1">
+            <div class="me">
+                <h2 class="about-me">About Me</h2>
+                <img src="images/albertpessima.jpg" alt="albert-pessima" width="140px" height="150px">
+                <p>My name is Albert Pessima.I was born in Rotifunk, Southern Sierra Leone. I currently live with my family in Freetown,
+                Sierra Leone. I currently work as a projet manager at a construction company. I havve passion for computers, whiich
+                has led me to study software development. I enjoy spending time aat the beach with my family and also watch a good
+                game of football.</p>
+                
+            </div>
             <div class="country-info">
                 <h2>Freetown, Sierra Leone</h2>
+                <hr> 
                 <div class="flag">
-                    <img src="images/sierra-leone-flag.jpg" alt="flag of sierra leone">
-                    <p>Official flag of Sierra Leone</p>
+                    <img src="images/sierra-leone-flag.jpg" alt="flag of sierra leone" width="130px" height="100px">
+                    <p class="flag-text">Official flag of Sierra Leone</p>
                 </div>
-                <p>Sierra Leone is .....</p>
+                <p>Sierra Leone is a small, West African country known for its rich natural resources, vibrant culture, and recent history of resilience. It has a population of around 8 million, with Freetown as its capital and largest city. The country is bordered by Guinea to the north and east, Liberia to the southeast, and the Atlantic Ocean to the southwest, giving it beautiful coastlines and tropical weather.</p>
             </div>
         </section>
-        <section class="card">
+        <section class="card2">
             <h2>Web Dev Resources</h2>
             <ul>
-                <li><a href="https://cssgrid-generator.netlify.app"></a>CSS Grid Generator</li>
+                <li><a href="https://cssgrid-generator.netlify.app">CSS Grid Generator</a></li>
                 <li><a href="ww.codecademy.com/resources/cheatsheets/language/html-css">HTML & CSS Cheatsheets | Codecademy</a></li>
                 <li><a href="https://validator.w3.org">The W3C Markup Validation Service</a></li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>©<span id="currentyear"></span> | Albert Pessima | Sierra Leone</p>
+        <p>©<span id="currentYear"></span> | Albert Pessima | Sierra Leone</p>
         <p id="lastModified"></p>
     </footer>
 </body>

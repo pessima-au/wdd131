@@ -1,0 +1,151 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1 {
+    background-color: #154c79;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name {
+    color: rgb(187, 197, 8);
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    margin-top: -22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    background-color: darkkhaki;
+    border: 1px ;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.card1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.card1 p, img {
+    padding: 10px;
+}
+
+.card1 p, img {
+    padding: 10px;
+}
+
+.card2 {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    text-align: center;
+    background-color: #154c79;
+    margin-top: 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.country-info h2 {
+    text-align: center;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.card2 h2 { 
+    text-align: center;
+    background-color: #154c79;
+    margin-top: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+img {
+    float: right;
+}
+
+ul {
+    margin-top: 150px;
+}
+
+li {
+    padding: 4px;
+}
+
+.flag {
+    float: left;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #154c79;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.flag-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: -10px;
+}
+
+hr {
+    width: 80%;
+    margin-top: -15px;
+}
