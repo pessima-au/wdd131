@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        body {
+	margin: .5rem auto;
+	padding: 0;
+	width: 500px;
+    }
+
+    h1 {text-align:center;}
+    p {
+	background-color: #eee;
+	border: 1px solid #999;
+	padding: .35rem;
+	
+    }
+    </style>
+</head>
+<body>
+    <h1>Loops</h1>
+
+    <h1>📆  Next 6 Days of the Week</h1>
+    <p id="today"></p>
+    <h2>Future Days of the Week</h2>
+    <ul></ul>
+
+    <script>
+        const DAYS = 6;
+        const LIMIT = 30;
+        let studentReport = [11, 42, 33, 64, 29, 37, 44];
+
+        console.log('For loop')
+        for (let i = 0; i < studentReport.length; i++) {
+            if (studentReport[i] < LIMIT) {
+                console.log(studentReport[i])
+            }
+        }
+        
+        console.log('')
+        console.log('While loop')
+        let i = 0
+        while (i < studentReport.length) {
+            if (studentReport[i] < LIMIT) {
+            console.log(studentReport[i])
+        }
+            i++
+        }
+
+        console.log('')
+        console.log('While loop')
+        studentReport.forEach((value) => {
+            if (value < LIMIT) {
+                console.log(value)
+            }
+        })
+
+        console.log('')
+        console.log('for...in loop')
+        for (let idx in studentReport) {
+            if (studentReport[idx] < LIMIT) {
+                console.log(studentReport[idx])
+            }
+        }
+
+        // Use any type of repetition (looping) statement to dynamically produce the day names (Monday, Tuesday, Wednesday, etc.) of the next number of DAYS from today's date.//
+
+        const n = 6;
+
+        const output = document.getElementsByTagName('ul');
+        const options = {weekday: 'long'};
+
+        const today = new Date();
+        let todaystring = new Intl.DateTimeFormat('en-US', options).format(today);
+        document.getElementById('today').innerHTML = `Today is ${todaystring}.`;
+
+        //next n days
+        for (let i = 1; i <= n; i++) {
+            let nextday = new Date()
+            nextday.setDate(today.getDate() + i);
+            let nextdaystring = new Intl.DateTimeFormat('en-US', options).format(nextday);
+
+            item = document.createElement('li');
+            item.textContent = nextdaystring;
+            output[0].appendChild(item);
+        }
+
+
+    </script>
+</body>
+</html>
