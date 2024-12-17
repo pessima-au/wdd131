@@ -1,0 +1,57 @@
+:root {
+    --font-family: 'Cabin';
+    --header-font: 'Montserrat';
+    --background: #000;
+    --header-color: #fff;
+  }  
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    color: #021830;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  } 

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.getElementById("nav-links");
 
     hamburger.addEventListener("click", function() {
+        console.log('Hamburger clicked')
         navLinks.classList.toggle("show"); 
 
         if (navLinks.classList.contains("show")) {

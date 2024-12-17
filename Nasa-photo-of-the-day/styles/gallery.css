@@ -1,0 +1,279 @@
+/* Basic styling for the gallery */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+}
+
+main {
+  height: auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem ;
+  justify-items: center;
+  /* height: 80%; */
+}
+
+#gallery img {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  opacity: 0;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#gallery img.loaded {
+  opacity: 1;
+}
+
+#load-more-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.7rem 1.5rem; 
+  font-size: 1rem;
+  border: none;
+  background-color: #021830;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  bottom: 10px;
+  z-index: 10;
+  margin-top: 10px;
+}
+
+#load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styling */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  /* z-index: 1001; */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+}
+
+#close-modal {
+  position:absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #11f551;
+  transition: color 0.3s;
+  z-index: 1002;
+}
+
+#close-modal:hover {
+  color: #f00;
+}
+
+#loading {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width:auto;
+  margin-right: 0;
+  margin-left: 0;
+  height: 65%;
+  padding: 15px;
+  text-align: center;
+  /* background-color: #333; */
+}
+
+#modal-title {
+  text-align: center;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+#search-form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+}
+
+#search-form label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#search-form select,
+#search-form button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #021830;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+  background-color: #0056b3;
+  font-weight: 700;
+}
+
+.search {
+  margin-top: 2.5rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+} 
+
+/* Media Query for smaller devices */
+@media (max-width: 640px) {
+   
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #gallery img {
+    width: calc(50% - 1rem);
+    max-width: 100%;
+    height: auto;
+  }
+
+    #load-more-btn {
+      margin: 1rem auto;
+      position: relative;
+      z-index: 10;
+      font-weight: 700;
+    }
+
+    main {
+      height: auto;
+    }
+
+    footer {
+      position:relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    body {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+      color: #333;
+      height: 100vh;
+    }
+
+    #search-form {
+      flex-wrap: wrap; /* Allow elements to wrap */
+      justify-content: space-between; /* Spread items evenly */
+      gap: 15px; /* Adjust spacing */
+    }
+  
+    #search-form select, #search-form button {
+      flex: 1 1 30%; /* Allow elements to grow and wrap */
+      min-width: 150px; /* Ensure a minimum width for dropdowns */
+    }
+  
+    #search-form button {
+      flex: 1 1 100%; /* Make button full-width on wrapping */
+      margin-top: 10px; /* Add spacing above the button */
+    }
+
+}

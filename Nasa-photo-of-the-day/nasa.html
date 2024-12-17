@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NASA Photo of the Day">
+  <meta name="author" content="Albert Pessima">
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>NASA Photo of the Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/nasa.css">
+  <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="nasa.html" target="_self">Home</a></li>
+        <li><a href="gallery/gallery.html" target="_self">Photo Gallery</a></li>
+        <li><a href="about/about.html" target="_self">About/Contact</a></li>
+        <li><a href="attribution/attribution.html" target="_self" class="active">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>NASA Photo of the Day</h1>
+      <p>Explore the cosmos with NASA's daily selection of breathtaking images!</p>
+      <div>
+        <button id="prev-btn">Previous Day</button>
+        <button id="next-btn">Next Day</button>
+        <p id="current-date"></p>
+      </div>
+    </section>
+    <div id="loading" class="hidden">Loading...</div>
+    <section id="photo-of-the-day">
+      <h2 id="featured-date"></h2>
+      <div id="photo-container">
+        <figure>
+          <img id="photo">
+          <figcaption id="image-title"></figcaption>
+        </figure>
+        <p id="photo-description"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NASA Photo App | <a href="attribution/attribution.html" target="_blank">Attributions</a></p>
+  </footer>
+</body>
+</html>

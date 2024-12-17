@@ -1,0 +1,145 @@
+:root {
+  --font-family: 'Cabin';
+  --header-font: 'Montserrat';
+  --background: #000;
+  --header-color: #fff;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-family: var(--font-family);
+  }
+  
+  h1, h2 {
+    font-family: var(--header-font);
+  }
+  /* Header & Navigation */
+  header {
+    background: var(--background);
+    color: var(--header-color);
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  nav a {
+    color: var(--header-color);
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-weight: 700;
+  }
+
+  nav a:hover {
+    background-color: rgb(13, 162, 48);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Photo Section */
+  #photo-of-the-day {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #photo-container img {
+    max-width: 90%;
+    height: 750px;
+    margin-bottom: 10px;
+  }
+  
+  #image-title {
+    margin-top: -15px;
+    font-size: small;
+    color: var(--header-color);
+  }
+
+  #photo-container {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+  }
+
+  #photo-description {
+    box-sizing: border-box;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid gray;
+    color: #030303;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: aqua;
+  }
+
+  footer {
+    background: var(--background);
+    padding: 30px;
+    color: var(--header-color);
+    text-align: center;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  } 
+
+  #prev-btn, #next-btn {
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  #loading {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 580px) {
+    header nav ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Align items to the left */
+      justify-content: center;
+      gap: 10px; 
+      padding: 10px; 
+    }
+  
+    header nav ul li {
+      margin: 0; 
+    }
+  
+    header nav ul li a {
+      font-size: 1rem; 
+    }
+
+    #photo-container img {
+      max-width: 90%;
+      height: 450px;
+      margin-bottom: 10px;
+    }
+  }
