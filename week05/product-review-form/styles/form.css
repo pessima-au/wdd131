@@ -1,7 +1,4 @@
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-
 :root{
     --main-background: #bed0d8;
     --font-family: 'sans-serif';
