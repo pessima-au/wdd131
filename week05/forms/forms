@@ -1,0 +1,33 @@
+Labeling 
+  - title
+     do not use 'submit', instead say 'i want to...' whatever follows is the name of the button. 
+  - align labels to the left in a straight line from top to bottom.
+  - place labels abouve the input box.
+
+Layout - phone numbers
+  - use single input to collect any number length
+radio/dropdown
+  - use radio buttons for less than 5 options and dropdown for nore than 5 options.
+placeholders
+use placeholder text to reduce confusion.
+
+Input - Ordering
+  - order choices logically.
+  - wrap all input in label tags
+
+Submission: Reset
+  - never add a reset button to page.
+  confirmation - show user a confirmation page.
+
+Design - touch
+  - minimum 44px tall
+  grouping - group labels to avoid consussion
+  chunking - use fildset to chucnk forms
+
+  inputs
+  type
+  name
+  user instruction
+  value
+  required/not
+  placeholder

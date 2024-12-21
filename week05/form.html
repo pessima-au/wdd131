@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review Form</h1>
+        <form id="reviewForm" method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <div>
+                    <input type="checkbox" id="feature1" name="features" value="feature1">
+                    <label for="feature1">Feature 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="feature2" name="features" value="feature2">
+                    <label for="feature2">Feature 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="feature3" name="features" value="feature3">
+                    <label for="feature3">Feature 3</label>
+                </div>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="writtenReview">Your Review:</label>
+            <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Write your review here..."></textarea>
+
+            <!-- User Name -->
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" placeholder="Enter your name">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Reviews Inc.</p>
+    </footer>
+
+</body>
+</html>

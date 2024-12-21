@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive design - forms">
+    <meta name="author" content="Albert Pessima">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="web-form">
+             <!-- Product Name -->
+            <label for="product">Product Name</label>
+            <select name="productName" id="product" required>
+                <option disabled selected>Select a product...&#9662</option>
+            </select>
+
+            <!-- Overall Rating -->
+             <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="radio-group">
+                    <label for="star1">&#9733;<input type="radio" name="rating" value="1" id="star1" required></label>
+                   
+                    <label for="star2">&#9733; &#9733;<input type="radio" name="rating" value="2" id="star2"required></label>
+                    
+                    <label for="star3">&#9733; &#9733; &#9733;<input type="radio" name="rating" value="3" id="star3"required></label>
+                    
+                    <label for="star4">&#9733; &#9733; &#9733; &#9733;<input type="radio" name="rating" value="4"id="star4" required></label>
+
+                    <label for="star5">&#9733; &#9733; &#9733; &#9733; &#9733;<input type="radio" name="rating" value="5"id="star5" required></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation <input type="date" id="installationDate"
+                    name="installationDate" required></label>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product? <i>(Check all that apply)</i></legend>
+                
+                <label for="feature1"><input type="checkbox" name="checkbox" value="durability" id="feature1">Durability</label>
+
+                
+                <label for="feature2"><input type="checkbox" name="checkbox" value="ease-of-use" id="feature2">Ease of Use</label>
+
+                
+                <label for="feature3"><input type="checkbox" name="checkbox" value="ease-of-use" id="feature3">Performance</label>
+
+                
+                <label for="feature4"><input type="checkbox" name="checkbox" value="ease-of-use" id="feature4">Design</label>
+            </fieldset>
+
+            <!-- Written Review -->
+             <fieldset>
+                <label for="writenReview">Your Review <span>(Optional)</span></label>
+                <textarea name="writenReview" id="writenReview" rows="5" placeholder="Write your review here..."></textarea>
+            </fieldset>
+
+            <!-- User Name -->
+             <fieldset>
+                <label for="name">Your Name <span>(Optional) </span><input type="text" id="name" autocomplete="name" placeholder="Enter name"></label>
+            </fieldset>
+
+            <!-- Submit Button -->
+             <fieldset>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Albert Pessima | Freetown | Sierra Leone</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

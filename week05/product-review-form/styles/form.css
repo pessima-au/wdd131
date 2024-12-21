@@ -1,0 +1,162 @@
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root{
+    --main-background: #bed0d8;
+    --font-family: 'sans-serif';
+    --background: #64153d;
+}
+
+header {
+    text-align: center;
+    padding: 0.5em;
+    background-color: var(--background);
+    color: white;
+    width: 900px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+
+main {
+    margin: 2em auto;
+    padding: 1em;
+    max-width: 900px;
+    height: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-background);
+}
+
+.web-form fieldset{
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .1rem ;
+    border: none;
+}  
+
+.web-form legend {
+    
+    margin-bottom: -15px;
+    margin-top: 1.5rem;
+}
+
+.web-form label {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: .9rem;
+    margin: 5px;
+}
+.web-form input {
+    margin-top: 5px;
+}
+
+.web-form input[type=text],
+.web-form input[type=date]
+{
+    display: block;
+    border: solid 1px gray;
+    padding: .55rem;
+    border-radius: 6px;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    background-color: #eee;
+    appearance: none;
+    
+}
+
+.web-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: .55rem;
+    border-radius: 6px;
+    color: #555;
+    background-color: #eee;
+    appearance: none;
+}
+
+.web-form select {
+    width: 100%;
+    max-width: 400px;
+    padding: .55rem;
+    border-radius: 6px;
+    color: #555;
+    background-color: #eee;
+    appearance: none;
+}
+
+
+.web-form input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+ .web-form input[type=radio] {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.web-form input[type="submit"] {
+    border:2px solid rgb(119, 116, 116);
+    background-image: linear-gradient(#faf8f8, #ece8e7);
+    color: #fff;
+    border-radius: 6px;
+    padding: .55rem;
+    width: 90%;
+    transition: background-color 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 4px #999;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9rem;
+    background-color: var(--background);
+    color: white;
+    padding: 15px;
+    width: 900px;
+    align-self: center;
+    justify-self: center;
+}
+
+.web-form span {
+    color: rgb(5, 5, 87);
+}
+
+.review {
+    height: 100vh;
+}
+
+.main {
+    height: 90vh;
+    text-align: center;
+
+}
+
+.main p {
+    margin: 50px;
+    font-size: xx-large;
+}
