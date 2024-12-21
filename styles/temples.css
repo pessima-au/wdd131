@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -38,18 +39,6 @@ header h1 {
     margin: 0;
     text-align: left; 
 }
-
-.hamburger {
-    display: none; 
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
-    color: white;
-    background-color: transparent;
-    border: none;
-    z-index: 10;
-}
-
 
 nav {
     display: block; 
@@ -124,6 +113,15 @@ figcaption {
     color: #555;
 }
 
+.show li {
+	display: block;
+}
+
+#nav-links.show {
+	display: flex;
+    flex-direction: column;
+}
+
 /* Footer */
 footer {
     background-color: #0d3455; 
@@ -134,6 +132,7 @@ footer {
 
 footer p {
     margin: 0;
+    padding: 3px;
     font-size: 14px;
 }
 
@@ -147,15 +146,14 @@ footer p {
         right: 20px; 
         font-size: 30px;
         cursor: pointer;
-        z-index: 10;
     }
 
     nav {
-        display:none;
+        display:block;
     }
 
     
-    nav ul {
+    #nav-links {
         display: none; 
         flex-direction: column;
         background-color: #0d3455;
@@ -163,46 +161,12 @@ footer p {
         position: absolute;
         top: 60px; 
         right: 0;
-        z-index: 5;
-        /* justify-content: center; 
-        align-items: center;      */
+        z-index: 10;
+        margin-top: 10px;
     }
-/* 
-    nav ul.show {
+
+    #nav-links.show {
         display: flex;
-    } */
-
-    nav#nav-links ul.show {
-        display: flex;
-        flex-direction: column;
-        background-color: #0d3455;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        z-index: 5;
-        .show {
-          justify-content: center;
-          align-items: center;
-        }
-      }
-
- 
-    /* nav ul li {
-        text-align: center; 
-        margin: 10px 0; 
     }
 
-    nav ul li a {
-        padding: 15px; 
-        font-size: 20px; 
-    }
-
-    
-    .hamburger.show {
-        position: absolute;
-        top: 15px;
-        left: 50%;
-        transform: translateX(-50%); 
-    } */
 }
