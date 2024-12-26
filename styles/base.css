@@ -167,3 +167,26 @@ hr {
     color: rgb(187, 197, 8);
     font-family: "Sanchez";
 }
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card2 {
+        margin-right: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+    
+}
