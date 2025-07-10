@@ -20,7 +20,7 @@ body {
   height: 100vh;
 }
 
-h1 {
+h2 {
   font-family: var(--header-font);
   color: var(--secondary-color);
   text-align: left;
