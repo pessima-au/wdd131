@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review Form</title>
+        <link rel="stylesheet" href="./styles/form.css">
+        <script src="./scripts/form.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form action="review.html" method="get" class="wform">
+                <fieldset>
+                    <label>Product Name
+                        <select name="product" id="product">
+                            <option value="" disabled selected>Choose a product ...</option>
+                        </select>
+
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <div>Overall Rating</div>
+                    <div class="rating">
+                        <label>&star;
+                            <input type="radio" name="rating" value="1" id="one-star">
+                        </label>
+                        <label>&star; &star;
+                            <input type="radio" name="rating" value="2" id="two-stars">
+                        </label>
+                        <label>&star; &star; &star;
+                            <input type="radio" name="rating" value="3" id="three-stars">
+                        </label>
+                        <label>&star; &star; &star; &star;
+                            <input type="radio" name="rating" value="4" id="four-stars">
+                        </label>
+                        <label>&star; &star; &star; &star; &star;
+                            <input type="radio" name="rating" value="5" id="five-stars">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Date of Installation
+                        <input type="date" name="date" id="date">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <div>Which features did you find useful in the product?<br> <i>(check all the apply)</i></div>
+                    <div class="feature-question">
+                        <label>
+                            <input type="checkbox">
+                            Durability
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Ease of Use
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Performance
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Design
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Written Review (<span>Optional</span>)
+                        <textarea name="Written Review" id="Written-review"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Your Name (<span>Optional</span>)
+                        <input type="text" name="name" id="name">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Post Review" id="submit-btn">
+            </form>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span> | Albert Pessima | Sierra Leone <span id="lastModified"></span></p>
+        </footer>
+    </body>
+
+</html>
