@@ -1,0 +1,171 @@
+#course-title {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  background-color: #41424c;
+  color: white;
+  padding: 1rem;
+}
+
+.name {
+  color: rgb(27, 244, 81);
+}
+
+nav {
+  background-color: #232023;
+  margin-top: -22px;
+  font-size: 1rem;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.8rem;
+  list-style: none;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-family: "Mona Sans", sans-serif;
+  display: block;
+}
+
+.navigation a:hover {
+  color: rgb(27, 244, 81);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #ef6618;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+main {
+  display: grid;
+  grid-template: auto 1fr / 1fr 1fr 1fr;
+  width: 95vw;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+h1 {
+  grid-column: 1 / span 3;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 5px;
+}
+
+.about-me {
+  grid-column: 1/3;
+  font-family: "Mona Sans", sans-serif;
+  border: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.about-me p {
+  padding: 1rem;
+}
+
+.course-resources {
+  grid-column: 3/4;
+  border: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.course-resources ul {
+  margin-top: 8rem;
+}
+
+.course-resources ul li {
+  padding: 0.5rem 1rem;
+  font-family: "Mona Sans", sans-serif;
+}
+
+.header2 {
+  font-family: "Montserrat";
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: fit-content;
+  background-color: #41424c;
+  color: white;
+  margin-top: 0;
+  padding: 2px;
+}
+
+.portrait {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin: 1rem;
+}
+
+.country-header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 0;
+}
+
+hr {
+  width: 60%;
+  margin-top: -20px;
+  background-color: #232023;
+}
+
+.flag {
+  width: 150px;
+  height: auto;
+  float: left;
+  margin: 1rem;
+  padding-top: 40px;
+}
+
+footer {
+  background-color: #41424c;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  font-family: "Mona Sans", sans-serif;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+#lastModified {
+  font-size: 0.7rem;
+  color: rgb(27, 244, 81);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 1rem auto;
+  }
+
+  .about-me,
+  .course-resources {
+    grid-column: auto;
+    margin-bottom: 1rem;
+  }
+
+  .portrait,
+  .flag {
+    float: none;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  hr {
+    width: 70vw;
+  }
+    
+}

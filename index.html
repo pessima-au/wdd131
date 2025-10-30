@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -  Albert Pessima - My homepage">
-    <title>WDD 131 - Dynamic Web Fundamentals - Albert Pessima</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="./scripts/getdates.js" defer></script>
-</head>
-<body>
-    <header>
-        <span id="course-title">WDD 131: Dynamic Web Fundamentals - Albert Pessima</span>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/albert-pessima/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/15?lang=eng&id=p4#p4"
-                    target="_blank">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Albert Pessima</h1>
-        <section class="card about-me">
-            <h2>About Me</h2>
-            <img src="./images/albertpessima.jpg" alt="">
-            <p>My name is Albert Pessima, and I was born in Rotifunk, a beautiful town in the Southern Province of Sierra Leone. I
-            currently live in Freetown with my family, where we enjoy a peaceful and fulfilling life together. Professionally, I
-            work as a Project Manager at a construction company, where I oversee project planning, coordination, and successful
-            implementation.
 
-            Beyond my professional life, I have a strong passion for technology and computers, which inspired me to pursue studies
-            in software development. I am deeply interested in how technology can be used to solve real-world problems and improve
-            lives—particularly in the areas of education and community development.
-            
-            In my leisure time, I love spending quality moments with my family, especially at the beach, where we often relax and
-            enjoy the ocean breeze. I’m also an enthusiastic football fan who appreciates the teamwork, strategy, and excitement
-            that the game brings. </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -  Albert Pessima - My homepage">
+        <meta name="author" content="Albert Pessima">
+        <title>WDD 131 - Dynamic Web Fundamentals - Albert Pessima</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital@0;1&family=Montserrat:ital@0;1&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="./scripts/getdates.js" defer></script>
+    </head>
 
-        </section>
-        <section class="card country-info">
-            <h2>Sierra Leone</h2>
-            <img src="./images/sierra-leone-flag.jpg" alt="Sierra Leone Flag">
-            <p>Sierra Leone is a country located on the west coast of Africa. It is bordered by Guinea to the north and east, Liberia to the southeast,
-            and the Atlantic Ocean to the west and southwest. The capital city of Sierra Leone is Freetown. The country has a diverse culture with
-            over 16 ethnic groups, each with its own unique traditions and customs. Sierra Leone is known for its beautiful beaches,
-            rich history, and vibrant music scene. The country has a tropical climate with a rainy season from May to November and a dry season from December to April.
-            Sierra Leone is also home to a variety of wildlife, including chimpanzees, elephants, and various bird species.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy;<span id="currentYear"></span> | Albert Pessima | Sierra Leone</p>
-        <p id="lastModified"></p>
-    </footer>
-</body>
+    <body>
+        <header>
+            <span id="course-title">WDD 131: Dynamic Web Fundamentals - <span class="name">Albert Pessima</span></span>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="https://www.linkedin.com/in/albert-pessima/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">I-Learn</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/15?lang=eng&id=p4#p4"
+                            target="_blank">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Albert Pessima</h1>
+            <section class="card about-me">
+                <h2 class="header2">About Me</h2>
+                <img class="portrait" src="./images/albertpessima.jpg" alt="">
+                <p>My name is Albert Pessima, and I was born in Rotifunk, a beautiful town in the Southern Province of
+                    Sierra Leone. I
+                    currently live in Freetown with my family, where we enjoy a peaceful and fulfilling life together.
+                    Professionally, I
+                    work as a Project Manager at a construction company, where I oversee project planning, coordination,
+                    and successful
+                    implementation.
+
+                    Beyond my professional life, I have a strong passion for technology and computers, which inspired me
+                    to pursue studies
+                    in software development. I am deeply interested in how technology can be used to solve real-world
+                    problems and improve
+                    lives—particularly in the areas of education and community development.
+
+                    In my leisure time, I love spending quality moments with my family, especially at the beach, where
+                    we often relax and
+                    enjoy the ocean breeze. I’m also an enthusiastic football fan who appreciates the teamwork,
+                    strategy, and excitement
+                    that the game brings. </p>
+
+                <h2 class="country-header">Freetown, Sierra Leone</h2>
+                <hr>
+                <img class="flag" src="./images/sierra-leone-flag.jpg" alt="Sierra Leone Flag">
+                <p>Sierra Leone is a country located on the west coast of Africa. It is bordered by Guinea to the north
+                    and east, Liberia to the southeast,
+                    and the Atlantic Ocean to the west and southwest. The capital city of Sierra Leone is Freetown. The
+                    country has a diverse culture with
+                    over 16 ethnic groups, each with its own unique traditions and customs. Sierra Leone is known for
+                    its beautiful beaches,
+                    rich history, and vibrant music scene. The country has a tropical climate with a rainy season from
+                    May to November and a dry season from December to April.
+                    Sierra Leone is also home to a variety of wildlife, including chimpanzees, elephants, and various
+                    bird species.</p>
+
+            </section>
+            <section class="card course-resources">
+                <h2 class="header2">Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://cssgrid-generator.netlify.app" target="_blank">CSS Grid Generator</a></li>
+                    <li><a href="https://www.codecademy.com/resources/cheatsheets/language/html-css"
+                            target="_blank">HTML & CSS
+                            Cheatsheets | Codecademy</a></li>
+                    <li><a href="https://validator.w3.org" target="_blank">The W3C Markup Validation Service</a></li>
+                    <li><a href="https://wireframe.cc/" target="_blank">Wireframe.cc - The Go-to Free, Online
+                            Wireframing Tool</a></li>
+                    <li><a href="https://jsfiddle.net/">JS Fiddle</a></li>
+                </ul>
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span> | Albert Pessima | Sierra Leone</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
 </html>
