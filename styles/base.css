@@ -9,7 +9,7 @@
 }
 
 .name {
-  color: rgb(27, 244, 81);
+  color: rgb(242, 234, 13);
 }
 
 nav {
@@ -137,7 +137,7 @@ footer p {
 
 #lastModified {
   font-size: 0.7rem;
-  color: rgb(27, 244, 81);
+  color: rgb(242, 234, 13);
 }
 
 @media screen and (max-width: 768px) {
