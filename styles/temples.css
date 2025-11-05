@@ -1,0 +1,136 @@
+main,
+header,
+footer {
+  margin: 0 auto;
+}
+
+header {
+  display: block;
+  gap: 1rem;
+  background-color: rgb(2, 45, 54);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.main-header {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Mona sans";
+}
+
+nav {
+  display: block;
+  background-color: rgb(2, 45, 54);
+}
+
+.navigation li {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+}
+
+.navigation a:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: #ef6618;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.active {
+  color: yellow;
+}
+
+#menu {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+.open li {
+  display: block;
+}
+
+#menu.open::before {
+  content: "×";
+}
+
+h1 {
+  text-align: center;
+  font-family: "Mona Sans";
+  font-weight: bold;
+}
+
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+div.temple-figs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
+  grid-gap: 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: rgb(2, 45, 54);
+  padding: 0.7rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#lastModified {
+  font-size: 1rem;
+  margin-top: -0.7rem;
+}
