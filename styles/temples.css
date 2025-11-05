@@ -7,14 +7,14 @@ footer {
 header {
   display: block;
   gap: 1rem;
-  background-color: rgb(2, 45, 54);;
+  background-color: #282828;
   padding: 1rem;
   margin: 0 auto;
 }
 
 .main-header {
   font-size: 2.5rem;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-family: "Mona sans";
 }
@@ -36,7 +36,7 @@ nav {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-family: "Roboto";
 }
 
@@ -48,13 +48,13 @@ nav {
 }
 
 .active {
-  color: yellow;
+  color: #ffff00;
 }
 
 #menu {
   display: block;
   padding: 0.5rem 0.75rem;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: bold;
@@ -118,14 +118,14 @@ figure {
 
 footer {
   margin-top: 3rem;
-  background-color: rgb(2, 45, 54);;
-  padding: 0.7rem;
+  background-color: #282828;
+  padding: 0.4rem;
 }
 
 footer p {
   text-align: center;
   font-size: 1.2rem;
-  color: white;
+  color: #ffffff;
 }
 
 #lastModified {
