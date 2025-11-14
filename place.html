@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A page with information about sierra Leone.">
+        <meta name="Author" content="Albert Pessima">
+        <title>Sierra Leone</title>
+        <link rel="stylesheet" href="./styles/place.css">
+        <script src="./scripts/place.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Sierra Leone</h1>
+        </header>
+        <main>
+            <div class="hero-image">
+                <picture>
+                    <source media="(min-width: 1000)" srcset="./images/chimp@Takugama-Sanctuary-large.webp">
+                    <source media="(min-width)" srcset="./images/chimp@Takugama-Sanctuary-medium.webp">
+                    <img src="./images/chimp@Takugama-Sanctuary-small.webp"
+                        alt="a chimpa hanging from a tree branch at Tacugama chimpaze sanctuary." width="500"
+                        height="250">
+                </picture>
+            </div>
+            <section id="country-info">
+                <h2>Data</h2>
+                <div>
+                    <strong>Area: </strong>
+                    <span>73,252 km<sup>2</sup></span>
+                </div>
+                <div>
+                    <strong>Population: </strong>
+                    <span>8,460,512</span>
+                </div>
+                <div>
+                    <strong>Capital: </strong><span>Freetown</span>
+                </div>
+                <div>
+                    <strong>Language: </strong>
+                    <span>English, Creole</span>
+                </div>
+                <div>
+                    <strong>Currency: </strong>
+                    <span>Leones (SLL)</span>
+                </div>
+                <div>
+                    <strong>Time Zone: </strong>
+                    <span>GMT 0</span>
+                </div>
+                <div>
+                    <strong>Calling Code: </strong>
+                    <span>+232</span>
+                </div>
+                <div>
+                    <strong>Internet TLD: </strong>
+                    <span>.sl</span>
+                </div>
+            </section>
+            <section id="weather-info">
+                <h2>Weather</h2>
+                <img src="./images/1530390_weather_clouds_cloudy_rain_sunny_icon.svg"
+                    alt="Cloudy weather in Freetown, Sierra Leone." width="50" height="auto" class="weather-icon">
+                <div>
+                    <strong>Temperature: </strong>
+                    <span>27°<sup>C</sup></span>
+                </div>
+                <div>
+                    <strong>Conditions: </strong>
+                    <span>Cloudy</span>
+                </div>
+                <div><strong>Wind: </strong>
+                    <span>8km/h</span>
+                </div>
+                <div>
+                    <strong>Wind Chill: </strong>
+                    <span>N/A</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="currentYear"></span> | Albert Pessima | Sierra Leone</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>
