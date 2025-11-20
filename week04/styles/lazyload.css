@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+figure img {
+    display: block;
+}
+
+.fade-in {
+    animation: fadeFromBlack 15s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

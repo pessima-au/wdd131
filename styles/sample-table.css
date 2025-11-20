@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+caption {
+    caption-side: bottom;
+    margin-top: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    width: 6rem;
+    padding: 0.5rem 0rem;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.blank, .main-head {
+    background-color: #000;
+    color: #f4f4f4;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+thead th {
+    background-color: #302a2a;
+    color: #f4f4f4;
+    border: none;
+    font-size: 1.2rem;
+}
