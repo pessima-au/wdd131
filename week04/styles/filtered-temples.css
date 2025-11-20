@@ -74,12 +74,6 @@ nav {
   content: "×";
 }
 
-h1 {
-  text-align: center;
-  font-family: "Mona Sans";
-  font-weight: bold;
-}
-
 main {
   max-width: 90vw;
   margin: 0 auto;
@@ -90,7 +84,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   place-items: center;
-  grid-gap: 20px;
+  grid-gap: 2rem;
 }
 
 
@@ -128,9 +122,7 @@ main {
 }
 
 h1 {
-    font-family: 'Mona Sans', sans-serif;
-    margin: 0;
-    padding: 20px;
+    margin-left: 5rem;
     color: white;
 }
 
