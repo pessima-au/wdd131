@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <!-- Background -->
+  <rect width="400" height="120" fill="white"/>
+
+  <!-- Hexagon: height matches the capital 'M' (~48px), with rounded corners -->
+  <path d="
+    M 30 36
+    Q 32 33 35 33
+    L 65 33
+    Q 68 33 70 36
+    L 85 60
+    Q 87 63 85 66
+    L 70 90
+    Q 68 93 65 93
+    L 35 93
+    Q 32 93 30 90
+    L 15 66
+    Q 13 63 15 60
+    Z"
+    fill="#0180ff" />
+
+  <!-- Text: 'Moandemah' in bold black, aligned with reduced gap -->
+  <text x="100" y="75" font-size="48" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+    Moandemah
+  </text>
+</svg>
